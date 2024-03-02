@@ -3,7 +3,7 @@ export default function Navbar() {
 		<>
 			<div className="navbar bg-base-100" data-theme="cyberpunk">
 				<a href className="btn btn-ghost text-xl">
-					KANAP⚽FOOT
+					Canap⚽Score
 				</a>
 			</div>
 		</>

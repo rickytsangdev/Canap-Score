@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Table({ data }) {
+export default function TableScore({ data }) {
 	return (
 		<div className="bg-gray-400 grid grid-cols-1 divide-y text-black ">
 			{data.response.map((fixture) => (

@@ -1,9 +1,15 @@
 // import { useEffect } from "react";
-import Fixture from "./components/fixture.js";
-import Navbar from "./components/navbar";
-import Table from "./components/table.js";
-// import { fetchFixtures } from "./lib/fetch-data";
-import { data } from "./lib/dummy-data.js";
+
+// Import components
+import Fixture from "./components/Fixture.jsx";
+import Header from "./components/Header.jsx";
+import TableScore from "./components/TableScore.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import UserProfilePage from "./pages/UserProfilePage.jsx";
+
+// Import Service to consume data
+// import { fetchFixtures } from "./services/fetch-data";
+import { data } from "./services/dummy-data.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -21,14 +27,16 @@ function App() {
 	return (
 		<div>
 			<div>
-				<Navbar />
+				<Header />
 				<BrowserRouter>
 					<Routes>
-						<Route path="/" element={<Table data={data} />}></Route>
+						<Route path="/" element={<TableScore data={data} />}></Route>
 						<Route
 							path="/fixture/:matchID"
 							element={<Fixture data={data} />}
 						></Route>
+						<Route path="/home" element={<HomePage />}></Route>
+						<Route path="/profile" element={<UserProfilePage />}></Route>
 					</Routes>
 				</BrowserRouter>
 			</div>

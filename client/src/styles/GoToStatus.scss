@@ -1,0 +1,22 @@
+.section_status {
+	height: 70vh;
+	background-color: #1f1f21;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); // 4 colonnes de taille égale
+	gap: 20px; // Espacement entre les cartes
+	padding: 20px; // Espacement autour de la grille
+
+	.card {
+		height: 150px;
+		background-color: #f0f0f0; // Couleur de fond des cartes
+		border: 1px solid #ccc; // Bordure des cartes
+		border-radius: 4px; // Arrondir les coins des cartes
+		padding: 20px; // Espacement à l'intérieur des cartes
+		text-align: center; // Centrer le texte dans les cartes
+		font-size: 1.2em; // Taille de la police
+		color: black;
+	}
+}

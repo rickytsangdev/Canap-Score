@@ -1,0 +1,72 @@
+.header {
+	background-color: #1f1f21;
+	padding: 2px;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	align-items: center;
+	.go_to_live {
+		margin-left: 1%;
+		font-size: small;
+		a {
+			font-size: 22px;
+		}
+	}
+	h1 {
+		margin: 0;
+	}
+	.title {
+		text-decoration: none;
+		color: white;
+		font-size: 46px;
+	}
+	.title:hover {
+		color: #d3d3d3;
+	}
+}
+
+.menu_nav {
+	display: flex;
+	width: 150px;
+	margin-right: 3%;
+	ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		gap: 5px;
+		width: 100%;
+		padding: 0;
+		.nav_link {
+			display: flex;
+			font-size: 20px;
+			gap: 3px;
+			align-items: center;
+			font-weight: 300;
+		}
+		.nav_link:hover {
+			text-decoration-line: underline;
+		}
+	}
+	a {
+		list-style-type: none;
+		color: #fff;
+		text-decoration-line: none;
+	}
+}
+
+.ghost-button {
+	display: inline-block;
+	width: 180px;
+	padding: 8px;
+	color: #fff;
+	border: 1px solid #fff;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	font-weight: 400;
+}
+.ghost-button:hover,
+.ghost-button:active {
+	background-color: #fff;
+	color: #000;
+}

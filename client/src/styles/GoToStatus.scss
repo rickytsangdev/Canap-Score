@@ -1,6 +1,7 @@
 .section_status {
-	height: 70vh;
+	height: 170vh;
 	background-color: #1f1f21;
+	position: relative;
 }
 
 .grid-container {
@@ -10,13 +11,23 @@
 	padding: 20px; // Espacement autour de la grille
 
 	.card {
-		height: 150px;
-		background-color: #f0f0f0; // Couleur de fond des cartes
+		height: 450px;
+		background-color: #fff; // Couleur de fond des cartes
 		border: 1px solid #ccc; // Bordure des cartes
 		border-radius: 4px; // Arrondir les coins des cartes
 		padding: 20px; // Espacement à l'intérieur des cartes
 		text-align: center; // Centrer le texte dans les cartes
 		font-size: 1.2em; // Taille de la police
 		color: black;
+	}
+}
+
+.bloc_for_img {
+	width: 400px;
+	height: 400px;
+	.img_picture {
+		width: 100%;
+		height: 100%;
+		object-fit: fill;
 	}
 }

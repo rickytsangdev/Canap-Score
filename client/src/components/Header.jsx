@@ -1,12 +1,10 @@
 import "../styles/Header.scss";
-import AdBar from "./AdBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 export default function Header() {
 	return (
 		<>
-			<AdBar />
 			<div className="header">
 				<div className="go_to_live">
 					<h2>

@@ -5,6 +5,11 @@
 	justify-content: space-between;
 	color: white;
 	align-items: center;
+	border-bottom: 1px solid #d3d3d3;
+	position: fixed;
+	z-index: 99;
+	top: 50px;
+	width: 100%;
 	.go_to_live {
 		margin-left: 1%;
 		font-size: small;

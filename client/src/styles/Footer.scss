@@ -1,0 +1,22 @@
+.footer_bloc {
+	display: flex;
+	height: 30vh;
+	position: relative;
+	background-color: #1f1f21;
+	flex-direction: column;
+	.footer_info {
+		display: flex;
+		height: 40%;
+		border-bottom: solid 0.5px rgba(255, 255, 255, 0.4);
+	}
+	.footer_cgv {
+		display: flex;
+		height: 60%;
+		justify-content: center;
+		align-items: center;
+
+		p {
+			text-align: center;
+		}
+	}
+}

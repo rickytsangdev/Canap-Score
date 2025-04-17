@@ -6,7 +6,7 @@ Avec son **chatbot intelligent intégré**, elle vous permet de suivre les score
 ## 🚀 Features
 
 ### 🎯 Fonctionnalités principales
-- 🏆 **Scores en direct** et résultats des matchs (football, tennis, etc.)
+- 🏆 **Scores en direct** et résultats des matchs (football, basket)
 - 📅 **Calendrier** et matchs à venir
 - 📊 **Statistiques d’équipes et de joueurs**
 - 🧠 **Chatbot sportif** :

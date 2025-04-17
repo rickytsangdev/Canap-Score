@@ -1,4 +1,4 @@
-Bienvenue dans **Canap-Score**, une application web sportive interactive inspirée de SofaScore 📊.  
+Bienvenue dans **Canap-Score**, une application web sportive interactive inspirée de SofaScore, pour Fan de Foot et de Basket, Crée par un sport Addict 😊📊.  
 Avec son **chatbot intelligent intégré**, elle vous permet de suivre les scores, stats, classements… et même de discuter avec un assistant sportif virtuel 🤖.
 
 ---

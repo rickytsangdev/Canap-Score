@@ -1,0 +1,17 @@
+<p>Résultats terminés ! </p>
+<section>
+    <h2>Bundesliga - Résultats terminés</h2>
+    <pre>{{ fixturesByLeague['bundesliga']  }}</pre> <!-- Affiche les données brutes -->
+    <ul class="divide-y p-2" *ngIf="fixturesByLeague['bundesliga'].length; ">
+      <li
+        class="flex justify-center p-2"
+        *ngFor="let fixture of fixturesByLeague['bundesliga']"
+        [attr.data-key]="fixture.fixture.id"
+      >
+        <img [src]="fixture.teams.home.logo" [alt]="fixture.teams.home.name" />
+        {{ fixture.teams.home.name }} vs {{ fixture.teams.away.name }}
+        <img [src]="fixture.teams.away.logo" [alt]="fixture.teams.away.name" />
+        {{ fixture.goals.home }} - {{ fixture.goals.away }}
+      </li>
+    </ul>
+  </section>

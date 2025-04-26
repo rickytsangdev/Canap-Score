@@ -1,0 +1,98 @@
+<div class="grid-cols-1">
+  <ng-container *ngIf="!loading; else loadingTemplate">
+    <!-- Premier League -->
+    <section>
+      <h2>Premier League</h2>
+      <ul class="divide-y p-2" *ngIf="fixturesByLeague['premierLeague'].length; else noData">
+        <li
+          class="flex justify-center p-2"
+          *ngFor="let fixture of fixturesByLeague['premierLeague']"
+          [attr.data-key]="fixture.fixture.id"
+        >
+          <img [src]="fixture.teams.home.logo" [alt]="fixture.teams.home.name" />
+          {{ fixture.teams.home.name }} vs {{ fixture.teams.away.name }}
+          <img [src]="fixture.teams.away.logo" [alt]="fixture.teams.away.name" />
+          {{ fixture.goals.home }} - {{ fixture.goals.away }}
+        </li>
+      </ul>
+    </section>
+
+    <!-- Serie A -->
+    <section>
+      <h2>Serie A</h2>
+      <ul class="divide-y p-2" *ngIf="fixturesByLeague['serieA'].length; else noData">
+        <li
+          class="flex justify-center p-2"
+          *ngFor="let fixture of fixturesByLeague['serieA']"
+          [attr.data-key]="fixture.fixture.id"
+        >
+          <img [src]="fixture.teams.home.logo" [alt]="fixture.teams.home.name" />
+          {{ fixture.teams.home.name }} vs {{ fixture.teams.away.name }}
+          <img [src]="fixture.teams.away.logo" [alt]="fixture.teams.away.name" />
+          {{ fixture.goals.home }} - {{ fixture.goals.away }}
+        </li>
+      </ul>
+    </section>
+
+    <!-- La Liga -->
+    <section>
+      <h2>La Liga BBVA</h2>
+      <ul class="divide-y p-2" *ngIf="fixturesByLeague['laLiga'].length; else noData">
+        <li
+          class="flex justify-center p-2"
+          *ngFor="let fixture of fixturesByLeague['laLiga']"
+          [attr.data-key]="fixture.fixture.id"
+        >
+          <img [src]="fixture.teams.home.logo" [alt]="fixture.teams.home.name" />
+          {{ fixture.teams.home.name }} vs {{ fixture.teams.away.name }}
+          <img [src]="fixture.teams.away.logo" [alt]="fixture.teams.away.name" />
+          {{ fixture.goals.home }} - {{ fixture.goals.away }}
+        </li>
+      </ul>
+    </section>
+
+    <!-- Bundesliga -->
+    <section>
+      <h2>Bundesliga</h2>
+      <ul class="divide-y p-2" *ngIf="fixturesByLeague['bundesliga'].length; else noData">
+        <li
+          class="flex justify-center p-2"
+          *ngFor="let fixture of fixturesByLeague['bundesliga']"
+          [attr.data-key]="fixture.fixture.id"
+        >
+          <img [src]="fixture.teams.home.logo" [alt]="fixture.teams.home.name" />
+          {{ fixture.teams.home.name }} vs {{ fixture.teams.away.name }}
+          <img [src]="fixture.teams.away.logo" [alt]="fixture.teams.away.name" />
+          {{ fixture.goals.home }} - {{ fixture.goals.away }}
+        </li>
+      </ul>
+    </section>
+
+
+
+        <!-- Ligue 1 -->
+        <section>
+          <h2>Ligue 1 </h2>
+          <ul class="divide-y p-2" *ngIf="fixturesByLeague['ligue1'].length; else noData">
+            <li
+              class="flex justify-center p-2"
+              *ngFor="let fixture of fixturesByLeague['ligue1']"
+              [attr.data-key]="fixture.fixture.id"
+            >
+              <img [src]="fixture.teams.home.logo" [alt]="fixture.teams.home.name" />
+              {{ fixture.teams.home.name }} vs {{ fixture.teams.away.name }}
+              <img [src]="fixture.teams.away.logo" [alt]="fixture.teams.away.name" />
+              {{ fixture.goals.home }} - {{ fixture.goals.away }}
+            </li>
+          </ul>
+        </section>
+  </ng-container>
+
+  <ng-template #loadingTemplate>
+    <p>Chargement des fixtures...</p>
+  </ng-template>
+
+  <ng-template #noData>
+    <p>Aucune donnée disponible.</p>
+  </ng-template>
+</div>

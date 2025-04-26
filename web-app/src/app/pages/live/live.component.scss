@@ -1,0 +1,35 @@
+/* Styles par défaut (desktop) */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  
+/* Media query pour les écrans mobiles */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Empile les éléments verticalement */
+      padding: 10px;
+      overflow-x: hidden; /* Empêche le défilement horizontal */
+    }
+  
+    .card {
+      width: 100%; /* Prend toute la largeur */
+      margin: 5px 0;
+    }
+  
+    .card img {
+      max-width: 50px; /* Réduit la taille des logos pour mobile */
+      height: auto;
+    }
+  }
